@@ -91,3 +91,81 @@ body {
 .container .card_front .bottom div:nth-child(odd) {
     background: var(--color-red);
 }
+
+/* ------------------------------- Back ------------------------------- */
+
+.container .card_back {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.container .card_back .left {
+    display: grid;
+    grid-template-rows: 6fr 2fr 2fr;
+    width: 100%;
+    height: 100%;
+}
+
+.container .card_back .left .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.container .card_back .left .top img {
+    width: 6rem;
+}
+
+.container .card_back .left .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--color-red);
+    border-bottom: 1px solid var(--color-red);
+}
+
+.container .card_back .left i {
+    margin-right: 1rem;
+}
+
+.container .card_back .right {
+    display: grid;
+    grid-template-rows: 6fr 2fr 2fr;
+    width: 100%;
+    height: 100%;
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.container .card_back .right .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 1.3rem;
+}
+
+.container .card_back .right .contact_details {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    align-items: center;
+}
+
+.container .card_back .right .middle {
+    background: var(--color-red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-top: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+}
