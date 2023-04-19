@@ -66,6 +66,7 @@ body {
     width: 100%;
     height: 100%;
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .container .card_front {
@@ -75,6 +76,12 @@ body {
     place-items: center;
     text-transform: uppercase;
     text-align: center;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.container .card_front:hover {
+    opacity: 0;
 }
 
 .container .card_front .bottom {
